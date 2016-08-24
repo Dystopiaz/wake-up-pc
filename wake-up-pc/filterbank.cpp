@@ -107,7 +107,7 @@ void Ham(float *frame)
 	{
 		frame[i] *= hamWin[i];
 	}
-	free(hamWin);
+	//free(hamWin);
 }
 
 float Mel(int k, float fres)
@@ -431,5 +431,12 @@ struct Wave filter_bank(char *s)
 		printf("%f ", *(w->Rdata + i));
 
 	}
+	/*free(cf->fbInfo.cf);
+	free(cf->fbInfo.loChan);
+	free(cf->fbInfo.loWt);
+	free(cf->fbInfo.x);
+	free(cf->fbank);
+	free(cf->s);
+	free(cf);*/
 	return *w;
 }

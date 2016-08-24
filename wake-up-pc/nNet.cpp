@@ -172,4 +172,7 @@ void dnn(struct Wave *w,char *s)
 		printf("%f %f %f\n", OutMat[0], OutMat[1], OutMat[2]);
 	}
 
+	/*free(w->wavdata);
+	free(w->Rdata);
+	free(w);*/
 }
