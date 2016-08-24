@@ -107,6 +107,7 @@ void Ham(float *frame)
 	{
 		frame[i] *= hamWin[i];
 	}
+	free(hamWin);
 }
 
 float Mel(int k, float fres)
